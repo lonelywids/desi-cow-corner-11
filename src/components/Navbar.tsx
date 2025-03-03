@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Menu, X, ShoppingBag, ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 
 const Navbar = () => {
@@ -34,20 +35,20 @@ const Navbar = () => {
     >
       <div className="container-custom flex justify-between items-center">
         {/* Logo */}
-        <a href="/" className="flex items-center">
+        <Link to="/" className="flex items-center">
           <span className="text-2xl font-playfair font-bold text-earth-800">
             Vardini Farms
           </span>
-        </a>
+        </Link>
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center space-x-8">
-          <NavLink href="#" label="Our Products" hasDropdown />
+          <NavLink href="/shop" label="Shop" />
           <NavLink href="#" label="Meet Our Cows" />
           <NavLink href="#" label="Rescue Mission" />
           <NavLink href="#" label="Farm Experience" />
           <NavLink href="#" label="Blog" />
-          <button className="btn-primary">Visit Farm</button>
+          <Link to="/shop" className="btn-primary">Visit Farm</Link>
           <button className="p-2 relative">
             <ShoppingBag className="h-6 w-6 text-earth-800" />
             <span className="absolute -top-1 -right-1 bg-terracotta-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
@@ -73,16 +74,16 @@ const Navbar = () => {
         )}
       >
         <div className="flex flex-col space-y-6">
-          <MobileNavLink href="#" label="Our Products" />
+          <MobileNavLink href="/shop" label="Shop" />
           <MobileNavLink href="#" label="Meet Our Cows" />
           <MobileNavLink href="#" label="Rescue Mission" />
           <MobileNavLink href="#" label="Farm Experience" />
           <MobileNavLink href="#" label="Blog" />
           
           <div className="pt-4 space-y-4">
-            <button className="w-full btn-primary">
+            <Link to="/shop" className="block w-full btn-primary text-center">
               Visit Farm
-            </button>
+            </Link>
             <button className="w-full btn-secondary flex items-center justify-center space-x-2">
               <ShoppingBag className="h-5 w-5" />
               <span>View Cart (0)</span>
@@ -95,8 +96,8 @@ const Navbar = () => {
 };
 
 const NavLink = ({ href, label, hasDropdown = false }: { href: string; label: string; hasDropdown?: boolean }) => (
-  <a 
-    href={href} 
+  <Link 
+    to={href} 
     className="relative text-earth-800 font-medium hover:text-earth-600 transition-colors duration-200 group"
   >
     <div className="flex items-center space-x-1">
@@ -104,16 +105,16 @@ const NavLink = ({ href, label, hasDropdown = false }: { href: string; label: st
       {hasDropdown && <ChevronDown className="h-4 w-4" />}
     </div>
     <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-terracotta-500 transition-all duration-300 group-hover:w-full"></span>
-  </a>
+  </Link>
 );
 
 const MobileNavLink = ({ href, label }: { href: string; label: string }) => (
-  <a 
-    href={href} 
+  <Link 
+    to={href} 
     className="text-lg font-medium text-earth-800 py-2 border-b border-earth-100"
   >
     {label}
-  </a>
+  </Link>
 );
 
 export default Navbar;
