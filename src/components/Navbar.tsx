@@ -44,7 +44,7 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center space-x-8">
           <NavLink href="/shop" label="Shop" />
-          <NavLink href="#" label="Meet Our Cows" />
+          <NavLink href="/meet-our-cows" label="Meet Our Cows" />
           <NavLink href="#" label="Rescue Mission" />
           <NavLink href="#" label="Farm Experience" />
           <NavLink href="#" label="Blog" />
@@ -75,7 +75,7 @@ const Navbar = () => {
       >
         <div className="flex flex-col space-y-6">
           <MobileNavLink href="/shop" label="Shop" />
-          <MobileNavLink href="#" label="Meet Our Cows" />
+          <MobileNavLink href="/meet-our-cows" label="Meet Our Cows" />
           <MobileNavLink href="#" label="Rescue Mission" />
           <MobileNavLink href="#" label="Farm Experience" />
           <MobileNavLink href="#" label="Blog" />
