@@ -46,7 +46,7 @@ const Navbar = () => {
           <NavLink href="/shop" label="Shop" />
           <NavLink href="/meet-our-cows" label="Meet Our Cows" />
           <NavLink href="/rescue-mission" label="Rescue Mission" />
-          <NavLink href="#" label="Farm Experience" />
+          <NavLink href="/farm-experience" label="Farm Experience" />
           <NavLink href="#" label="Blog" />
           <Link to="/shop" className="btn-primary">Visit Farm</Link>
           <button className="p-2 relative">
@@ -77,11 +77,11 @@ const Navbar = () => {
           <MobileNavLink href="/shop" label="Shop" />
           <MobileNavLink href="/meet-our-cows" label="Meet Our Cows" />
           <MobileNavLink href="/rescue-mission" label="Rescue Mission" />
-          <MobileNavLink href="#" label="Farm Experience" />
+          <MobileNavLink href="/farm-experience" label="Farm Experience" />
           <MobileNavLink href="#" label="Blog" />
           
           <div className="pt-4 space-y-4">
-            <Link to="/shop" className="block w-full btn-primary text-center">
+            <Link to="/farm-experience" className="block w-full btn-primary text-center">
               Visit Farm
             </Link>
             <button className="w-full btn-secondary flex items-center justify-center space-x-2">
