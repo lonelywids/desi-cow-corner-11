@@ -1,12 +1,14 @@
 
 import { useState, useEffect } from 'react';
-import { Menu, X, ShoppingBag, ChevronDown } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Menu, X, ShoppingBag, ChevronDown, ArrowLeft } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
 import { cn } from '@/lib/utils';
+import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,6 +25,10 @@ const Navbar = () => {
   }, []);
 
   const toggleMenu = () => setIsOpen(!isOpen);
+  
+  const handleBack = () => {
+    navigate(-1);
+  };
 
   return (
     <nav 
@@ -34,8 +40,21 @@ const Navbar = () => {
       )}
     >
       <div className="container-custom flex justify-between items-center">
-        {/* Logo */}
-        <Link to="/" className="flex items-center">
+        {/* Back Button (visible when mobile menu is open) */}
+        {isOpen && (
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={handleBack}
+            className="lg:hidden"
+            aria-label="Go back"
+          >
+            <ArrowLeft className="h-5 w-5 text-earth-800" />
+          </Button>
+        )}
+
+        {/* Logo (hidden when mobile menu is open on small screens) */}
+        <Link to="/" className={cn("flex items-center", isOpen ? "hidden lg:flex" : "")}>
           <span className="text-2xl font-playfair font-bold text-earth-800">
             Vardini Farms
           </span>
