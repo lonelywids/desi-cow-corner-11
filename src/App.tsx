@@ -11,6 +11,7 @@ import MeetOurCows from "./pages/MeetOurCows";
 import RescueMission from "./pages/RescueMission";
 import FarmExperience from "./pages/FarmExperience";
 import DesiInitiatives from "./pages/DesiInitiatives";
+import AdoptACow from "./pages/AdoptACow";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/rescue-mission" element={<RescueMission />} />
           <Route path="/farm-experience" element={<FarmExperience />} />
           <Route path="/desi-initiatives" element={<DesiInitiatives />} />
+          <Route path="/adopt-a-cow" element={<AdoptACow />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -67,7 +67,8 @@ const Navbar = () => {
           <NavLink href="/rescue-mission" label="Rescue Mission" />
           <NavLink href="/farm-experience" label="Farm Experience" />
           <NavLink href="/desi-initiatives" label="Feel Desi Initiatives" />
-          <Link to="/shop" className="btn-primary">Visit Farm</Link>
+          <NavLink href="/adopt-a-cow" label="Adopt a Cow" />
+          <Link to="/farm-experience" className="btn-primary">Visit Farm</Link>
           <button className="p-2 relative">
             <ShoppingBag className="h-6 w-6 text-earth-800" />
             <span className="absolute -top-1 -right-1 bg-terracotta-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
@@ -98,6 +99,7 @@ const Navbar = () => {
           <MobileNavLink href="/rescue-mission" label="Rescue Mission" />
           <MobileNavLink href="/farm-experience" label="Farm Experience" />
           <MobileNavLink href="/desi-initiatives" label="Feel Desi Initiatives" />
+          <MobileNavLink href="/adopt-a-cow" label="Adopt a Cow" />
           
           <div className="pt-4 space-y-4">
             <Link to="/farm-experience" className="block w-full btn-primary text-center">
