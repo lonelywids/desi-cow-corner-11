@@ -68,6 +68,7 @@ const Navbar = () => {
           <NavLink href="/farm-experience" label="Farm Experience" />
           <NavLink href="/desi-initiatives" label="Feel Desi Initiatives" />
           <NavLink href="/adopt-a-cow" label="Adopt a Cow" />
+          <NavLink href="/volunteer-opportunities" label="Volunteer" />
           <Link to="/farm-experience" className="btn-primary">Visit Farm</Link>
           <button className="p-2 relative">
             <ShoppingBag className="h-6 w-6 text-earth-800" />
@@ -100,6 +101,7 @@ const Navbar = () => {
           <MobileNavLink href="/farm-experience" label="Farm Experience" />
           <MobileNavLink href="/desi-initiatives" label="Feel Desi Initiatives" />
           <MobileNavLink href="/adopt-a-cow" label="Adopt a Cow" />
+          <MobileNavLink href="/volunteer-opportunities" label="Volunteer" />
           
           <div className="pt-4 space-y-4">
             <Link to="/farm-experience" className="block w-full btn-primary text-center">

@@ -14,6 +14,7 @@ import DesiInitiatives from "./pages/DesiInitiatives";
 import AdoptACow from "./pages/AdoptACow";
 import Donation from "./pages/Donation";
 import Volunteer from "./pages/Volunteer";
+import VolunteerOpportunities from "./pages/VolunteerOpportunities";
 import Ambassador from "./pages/Ambassador";
 import CorporatePartnership from "./pages/CorporatePartnership";
 import NotFound from "./pages/NotFound";
@@ -37,6 +38,7 @@ const App = () => (
           <Route path="/adopt-a-cow" element={<AdoptACow />} />
           <Route path="/donation" element={<Donation />} />
           <Route path="/volunteer" element={<Volunteer />} />
+          <Route path="/volunteer-opportunities" element={<VolunteerOpportunities />} />
           <Route path="/ambassador" element={<Ambassador />} />
           <Route path="/corporate-partnership" element={<CorporatePartnership />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
