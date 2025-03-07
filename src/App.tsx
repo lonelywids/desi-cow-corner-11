@@ -12,6 +12,10 @@ import RescueMission from "./pages/RescueMission";
 import FarmExperience from "./pages/FarmExperience";
 import DesiInitiatives from "./pages/DesiInitiatives";
 import AdoptACow from "./pages/AdoptACow";
+import Donation from "./pages/Donation";
+import Volunteer from "./pages/Volunteer";
+import Ambassador from "./pages/Ambassador";
+import CorporatePartnership from "./pages/CorporatePartnership";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,6 +35,10 @@ const App = () => (
           <Route path="/farm-experience" element={<FarmExperience />} />
           <Route path="/desi-initiatives" element={<DesiInitiatives />} />
           <Route path="/adopt-a-cow" element={<AdoptACow />} />
+          <Route path="/donation" element={<Donation />} />
+          <Route path="/volunteer" element={<Volunteer />} />
+          <Route path="/ambassador" element={<Ambassador />} />
+          <Route path="/corporate-partnership" element={<CorporatePartnership />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
