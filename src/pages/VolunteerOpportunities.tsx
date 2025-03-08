@@ -2,9 +2,9 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { Calendar, Heart, Users, Leaf, Book, Clock, CheckCircle } from "lucide-react";
+import { Calendar, Users, Leaf, School, Heart } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -13,7 +13,7 @@ const VolunteerOpportunities = () => {
     <>
       <Helmet>
         <title>Volunteer Opportunities | Vardini Farms</title>
-        <meta name="description" content="Join our volunteer program and help us educate people about desi cow breeds and Indian culture." />
+        <meta name="description" content="Join our volunteer program and help us care for rescued cows while learning about sustainable farming practices." />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">
@@ -21,112 +21,61 @@ const VolunteerOpportunities = () => {
         
         <main className="flex-grow">
           {/* Hero Section */}
-          <section className="bg-[url('/images/volunteer-hero.jpg')] bg-cover bg-center py-20 relative">
+          <section className="bg-[url('https://images.unsplash.com/photo-1560493676-04071c5f467b')] bg-cover bg-center py-20 relative">
             <div className="absolute inset-0 bg-black/50"></div>
             <div className="container mx-auto px-4 relative z-10 text-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 font-playfair">Volunteer With Us</h1>
-              <p className="text-xl text-white/90 max-w-3xl mx-auto">Be a part of our desi initiatives and help us educate people about indigenous cow breeds and Indian cultural heritage.</p>
+              <p className="text-xl text-white/90 max-w-3xl mx-auto">Make a meaningful impact by volunteering your time and skills to help our rescued cows and support sustainable farming practices.</p>
             </div>
           </section>
           
-          {/* Introduction */}
+          {/* Why Volunteer Section */}
           <section className="py-16 container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold mb-8 font-playfair text-center">Join Our Mission</h2>
+              <h2 className="text-3xl font-bold mb-8 font-playfair text-center">Why Volunteer at Vardini Farms?</h2>
               <p className="text-lg mb-6">
-                At Vardini Farms, we believe that preserving our indigenous cow breeds and traditional knowledge is not just our responsibility—it's a collective effort. Our volunteer program offers urban Indians an opportunity to reconnect with their roots while making a meaningful impact.
+                Volunteering at Vardini Farms offers a unique opportunity to connect with nature, serve animals, and be part of a movement that's preserving our cultural heritage. Whether you're looking to learn about sustainable farming, contribute to animal welfare, or simply spend time in a peaceful rural setting, we have something for everyone.
               </p>
-              <p className="text-lg mb-6">
-                Whether you're a college student, working professional, retiree, or someone passionate about Indian culture and sustainable living, we have volunteer opportunities that match your interests, skills, and availability.
-              </p>
-            </div>
-          </section>
-          
-          {/* Volunteer Opportunities */}
-          <section className="py-16 bg-slate-50">
-            <div className="container mx-auto px-4">
-              <h2 className="text-3xl font-bold mb-12 text-center font-playfair">Volunteer Opportunities</h2>
               
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <Card className="border-t-4 border-t-amber-600">
-                  <CardHeader>
-                    <Heart className="h-8 w-8 text-amber-600 mb-2" />
-                    <CardTitle>Cow Care Assistant</CardTitle>
-                    <CardDescription>Weekend commitment: 4-6 hours</CardDescription>
+              <div className="grid md:grid-cols-2 gap-8 mt-12">
+                <Card>
+                  <CardHeader className="flex flex-row items-center gap-4">
+                    <Heart className="h-8 w-8 text-terracotta-500" />
+                    <CardTitle>Connect with Cows</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <ul className="space-y-2">
-                      <li className="flex items-start">
-                        <span className="text-amber-600 mr-2">•</span>
-                        <span>Assist our gau sevaks in daily cow care routines</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="text-amber-600 mr-2">•</span>
-                        <span>Help prepare special feeds and herbal medicines</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="text-amber-600 mr-2">•</span>
-                        <span>Learn traditional care methods for indigenous cows</span>
-                      </li>
-                    </ul>
+                    <p>Build relationships with our rescued cows while helping with their daily care and understanding their unique personalities.</p>
                   </CardContent>
-                  <CardFooter>
-                    <p className="text-sm text-gray-500">Perfect for animal lovers and those seeking a spiritual connection with gau mata</p>
-                  </CardFooter>
                 </Card>
                 
-                <Card className="border-t-4 border-t-green-600">
-                  <CardHeader>
-                    <Book className="h-8 w-8 text-green-600 mb-2" />
-                    <CardTitle>Educational Program Volunteer</CardTitle>
-                    <CardDescription>Weekday evenings or weekends</CardDescription>
+                <Card>
+                  <CardHeader className="flex flex-row items-center gap-4">
+                    <Leaf className="h-8 w-8 text-green-600" />
+                    <CardTitle>Learn Sustainable Practices</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <ul className="space-y-2">
-                      <li className="flex items-start">
-                        <span className="text-green-600 mr-2">•</span>
-                        <span>Conduct school workshops about desi cows and traditions</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="text-green-600 mr-2">•</span>
-                        <span>Create educational content about Indian agricultural heritage</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="text-green-600 mr-2">•</span>
-                        <span>Guide visitors during farm tours and educational visits</span>
-                      </li>
-                    </ul>
+                    <p>Gain hands-on experience in sustainable farming, natural cow care, and eco-friendly agricultural techniques.</p>
                   </CardContent>
-                  <CardFooter>
-                    <p className="text-sm text-gray-500">Ideal for teachers, students, and those with good communication skills</p>
-                  </CardFooter>
                 </Card>
                 
-                <Card className="border-t-4 border-t-blue-600">
-                  <CardHeader>
-                    <Leaf className="h-8 w-8 text-blue-600 mb-2" />
-                    <CardTitle>Sustainable Living Mentor</CardTitle>
-                    <CardDescription>Flexible commitment</CardDescription>
+                <Card>
+                  <CardHeader className="flex flex-row items-center gap-4">
+                    <Users className="h-8 w-8 text-blue-600" />
+                    <CardTitle>Community Connection</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <ul className="space-y-2">
-                      <li className="flex items-start">
-                        <span className="text-blue-600 mr-2">•</span>
-                        <span>Teach urban dwellers about sustainable living practices</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="text-blue-600 mr-2">•</span>
-                        <span>Conduct workshops on traditional cooking, Ayurveda, etc.</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="text-blue-600 mr-2">•</span>
-                        <span>Help develop content for our sustainable living programs</span>
-                      </li>
-                    </ul>
+                    <p>Meet like-minded individuals, form lasting friendships, and be part of a community dedicated to making a difference.</p>
                   </CardContent>
-                  <CardFooter>
-                    <p className="text-sm text-gray-500">Great for professionals with knowledge of traditional practices and sustainable living</p>
-                  </CardFooter>
+                </Card>
+                
+                <Card>
+                  <CardHeader className="flex flex-row items-center gap-4">
+                    <School className="h-8 w-8 text-amber-600" />
+                    <CardTitle>Cultural Education</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p>Learn about the cultural significance of indigenous cows in Indian heritage and traditional knowledge systems.</p>
+                  </CardContent>
                 </Card>
               </div>
             </div>
@@ -134,152 +83,246 @@ const VolunteerOpportunities = () => {
           
           <Separator />
           
-          {/* Impact of Volunteering */}
-          <section className="py-16 container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-12 text-center font-playfair">Your Impact as a Volunteer</h2>
-            
-            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              <div className="text-center p-6">
-                <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="h-8 w-8 text-amber-600" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">Cultural Preservation</h3>
-                <p>Help preserve traditional knowledge and practices that are rapidly disappearing from urban India.</p>
-              </div>
-              
-              <div className="text-center p-6">
-                <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Heart className="h-8 w-8 text-green-600" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">Cow Protection</h3>
-                <p>Directly contribute to the welfare and protection of indigenous cow breeds facing extinction.</p>
-              </div>
-              
-              <div className="text-center p-6">
-                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Book className="h-8 w-8 text-blue-600" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">Educational Outreach</h3>
-                <p>Spread awareness about our cultural heritage, sustainable practices, and indigenous knowledge.</p>
-              </div>
-            </div>
-          </section>
-          
-          {/* Volunteer Process */}
+          {/* Volunteer Opportunities Section */}
           <section className="py-16 bg-earth-50">
             <div className="container mx-auto px-4">
-              <h2 className="text-3xl font-bold mb-12 text-center font-playfair">How to Join Our Volunteer Program</h2>
+              <h2 className="text-3xl font-bold mb-12 text-center font-playfair">Volunteer Opportunities</h2>
               
-              <div className="max-w-4xl mx-auto">
-                <div className="relative">
-                  {/* Vertical Timeline Line */}
-                  <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 top-0 h-full w-1 bg-earth-200 z-0"></div>
-                  
-                  {/* Timeline Items */}
-                  <div className="space-y-12">
-                    <TimelineItem 
-                      number="1"
-                      title="Apply Online"
-                      description="Fill out our volunteer application form with your interests, skills, and availability."
-                      isLeft={true}
-                    />
-                    
-                    <TimelineItem 
-                      number="2"
-                      title="Orientation Session"
-                      description="Attend an orientation session to learn about our mission, values, and volunteer guidelines."
-                      isLeft={false}
-                    />
-                    
-                    <TimelineItem 
-                      number="3"
-                      title="Training"
-                      description="Receive specific training for your volunteer role from our experienced team members."
-                      isLeft={true}
-                    />
-                    
-                    <TimelineItem 
-                      number="4"
-                      title="Start Volunteering"
-                      description="Begin your volunteering journey and make a positive impact on our community."
-                      isLeft={false}
-                    />
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Daily Cow Care</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="mb-4">Help with feeding, grooming, and caring for our rescued cows. Learn about their dietary needs and healthcare.</p>
+                    <p><strong>Time Commitment:</strong> Flexible, 3-4 hours</p>
+                  </CardContent>
+                </Card>
+                
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Farm Maintenance</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="mb-4">Assist with maintaining cow shelters, fencing, gardening, and general upkeep of the farm facilities.</p>
+                    <p><strong>Time Commitment:</strong> Weekly, 4-5 hours</p>
+                  </CardContent>
+                </Card>
+                
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Educational Programs</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="mb-4">Help conduct tours for visitors, explain our mission, and teach about indigenous cow breeds and their importance.</p>
+                    <p><strong>Time Commitment:</strong> Weekends, 5-6 hours</p>
+                  </CardContent>
+                </Card>
+                
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Organic Farming</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="mb-4">Learn and assist with our organic farming operations, from planting to harvesting using traditional methods.</p>
+                    <p><strong>Time Commitment:</strong> Seasonal, 4-6 hours</p>
+                  </CardContent>
+                </Card>
+                
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Cow Products Workshop</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="mb-4">Learn to make products from cow milk, dung, and urine following traditional techniques with modern standards.</p>
+                    <p><strong>Time Commitment:</strong> Monthly, full day workshop</p>
+                  </CardContent>
+                </Card>
+                
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Special Events</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="mb-4">Help organize and conduct special events, festivals, and awareness programs at the farm or in nearby communities.</p>
+                    <p><strong>Time Commitment:</strong> As needed, varies</p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </section>
+          
+          {/* How to Apply Section */}
+          <section className="py-16 container mx-auto px-4">
+            <div className="bg-earth-800 text-white rounded-2xl p-8 md:p-12 relative overflow-hidden max-w-4xl mx-auto">
+              <div className="absolute inset-0 z-0">
+                <img 
+                  src="https://images.unsplash.com/photo-1516467508483-a7212febe31a" 
+                  alt="Volunteers at Vardini Farms" 
+                  className="w-full h-full object-cover opacity-20"
+                />
+              </div>
+              
+              <div className="relative z-10">
+                <h2 className="text-3xl font-bold mb-6 font-playfair text-center">How to Apply</h2>
+                <p className="text-lg mb-8 text-center">
+                  Ready to make a difference? Follow these simple steps to join our volunteer program:
+                </p>
+                
+                <div className="grid md:grid-cols-3 gap-6 mb-8">
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-terracotta-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <span className="font-bold text-xl">1</span>
+                    </div>
+                    <h3 className="font-bold mb-2">Fill the Form</h3>
+                    <p>Complete our online volunteer application form with your details and interests.</p>
                   </div>
+                  
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-terracotta-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <span className="font-bold text-xl">2</span>
+                    </div>
+                    <h3 className="font-bold mb-2">Orientation</h3>
+                    <p>Attend a virtual or in-person orientation session to learn about our work.</p>
+                  </div>
+                  
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-terracotta-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <span className="font-bold text-xl">3</span>
+                    </div>
+                    <h3 className="font-bold mb-2">Start Volunteering</h3>
+                    <p>Choose your preferred activities and schedule your first volunteering session.</p>
+                  </div>
+                </div>
+                
+                <div className="text-center">
+                  <Button size="lg" className="bg-terracotta-500 hover:bg-terracotta-600">
+                    <Calendar className="mr-2 h-5 w-5" />
+                    Apply to Volunteer
+                  </Button>
                 </div>
               </div>
             </div>
           </section>
           
-          {/* Volunteer Testimonials */}
-          <section className="py-16 container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-12 text-center font-playfair">Volunteer Stories</h2>
-            
-            <div className="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
-              <Card className="bg-white shadow-lg">
-                <CardHeader>
-                  <CardTitle>Aditya Sharma</CardTitle>
-                  <CardDescription>Software Engineer, Bangalore</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="italic text-gray-600">
-                    "As a techie who spends most of my time in front of screens, volunteering at Vardini Farms has been a transformative experience. Connecting with our cultural roots and getting to teach school children about desi cows has brought immense joy and purpose to my life."
-                  </p>
-                </CardContent>
-              </Card>
+          {/* Testimonials Section */}
+          <section className="py-16 bg-cream-50">
+            <div className="container mx-auto px-4">
+              <h2 className="text-3xl font-bold mb-12 text-center font-playfair">Volunteer Testimonials</h2>
               
-              <Card className="bg-white shadow-lg">
-                <CardHeader>
-                  <CardTitle>Priya Malhotra</CardTitle>
-                  <CardDescription>College Student, Delhi</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="italic text-gray-600">
-                    "I started volunteering at Vardini Farms during my college break, and it completely changed my perspective. Learning about sustainable living practices and connecting with our ancient wisdom has inspired me to pursue environmental studies."
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <Card className="bg-white shadow-md">
+                  <CardContent className="pt-6">
+                    <img 
+                      src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" 
+                      alt="Volunteer Anita" 
+                      className="w-20 h-20 rounded-full mx-auto mb-4 object-cover"
+                    />
+                    <h3 className="font-bold text-lg text-center mb-2">Anita Sharma</h3>
+                    <p className="text-center text-earth-600 mb-4">Volunteer since 2022</p>
+                    <p className="italic text-gray-600">
+                      "Volunteering at Vardini Farms has been transformative. The connection I've developed with the cows and the knowledge I've gained about sustainable farming has changed my outlook on life. It's a peaceful place where you can truly make a difference."
+                    </p>
+                  </CardContent>
+                </Card>
+                
+                <Card className="bg-white shadow-md">
+                  <CardContent className="pt-6">
+                    <img 
+                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d" 
+                      alt="Volunteer Rahul" 
+                      className="w-20 h-20 rounded-full mx-auto mb-4 object-cover"
+                    />
+                    <h3 className="font-bold text-lg text-center mb-2">Rahul Mehra</h3>
+                    <p className="text-center text-earth-600 mb-4">Weekend Volunteer</p>
+                    <p className="italic text-gray-600">
+                      "As a corporate professional, my weekend volunteering at Vardini Farms provides the perfect balance to my busy urban life. Working with the cows is therapeutic, and I've learned so much about our cultural heritage that I wouldn't have otherwise."
+                    </p>
+                  </CardContent>
+                </Card>
+                
+                <Card className="bg-white shadow-md">
+                  <CardContent className="pt-6">
+                    <img 
+                      src="https://images.unsplash.com/photo-1580489944761-15a19d654956" 
+                      alt="Volunteer Priya" 
+                      className="w-20 h-20 rounded-full mx-auto mb-4 object-cover"
+                    />
+                    <h3 className="font-bold text-lg text-center mb-2">Priya Patel</h3>
+                    <p className="text-center text-earth-600 mb-4">Student Volunteer</p>
+                    <p className="italic text-gray-600">
+                      "I started volunteering at Vardini as part of a college project, but it's become a passion. The team is incredibly supportive, and I've gained practical experience in sustainable farming that complements my environmental studies perfectly."
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
           </section>
           
           {/* FAQ Section */}
-          <section className="py-16 bg-earth-50">
-            <div className="container mx-auto px-4">
+          <section className="py-16 container mx-auto px-4">
+            <div className="max-w-3xl mx-auto">
               <h2 className="text-3xl font-bold mb-12 text-center font-playfair">Frequently Asked Questions</h2>
               
-              <div className="max-w-3xl mx-auto space-y-6">
-                <div className="bg-white p-6 rounded-lg shadow-sm">
-                  <h3 className="text-xl font-bold mb-3">Do I need any special qualifications to volunteer?</h3>
-                  <p>Most volunteer positions don't require specific qualifications, just enthusiasm and commitment. We provide all necessary training. For specialized roles like Ayurvedic workshops or educational programs, relevant experience is beneficial but not mandatory.</p>
-                </div>
+              <div className="space-y-6">
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Do I need prior experience with cows or farming?</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p>No prior experience is required. We provide training for all volunteer activities. Your enthusiasm and willingness to learn are all you need to bring!</p>
+                  </CardContent>
+                </Card>
                 
-                <div className="bg-white p-6 rounded-lg shadow-sm">
-                  <h3 className="text-xl font-bold mb-3">What is the minimum time commitment?</h3>
-                  <p>We offer flexible volunteering options ranging from one-time events to regular weekly commitments. The minimum commitment depends on the role, but generally, we ask for at least 4 hours per month for ongoing positions.</p>
-                </div>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>What age groups can volunteer?</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p>We welcome volunteers of all ages. Those under 16 must be accompanied by an adult. We have appropriate activities for different age groups and abilities.</p>
+                  </CardContent>
+                </Card>
                 
-                <div className="bg-white p-6 rounded-lg shadow-sm">
-                  <h3 className="text-xl font-bold mb-3">Can I volunteer as a family or with friends?</h3>
-                  <p>Absolutely! We encourage family and group volunteering. It's a wonderful way to spend quality time together while making a positive impact. We have special family-friendly volunteer days once a month.</p>
-                </div>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Is there a minimum time commitment?</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p>While we appreciate any time you can give, we recommend a minimum commitment of 4 hours per month to have a meaningful experience and build relationships with our cows.</p>
+                  </CardContent>
+                </Card>
                 
-                <div className="bg-white p-6 rounded-lg shadow-sm">
-                  <h3 className="text-xl font-bold mb-3">I live in an urban area. Can I still volunteer?</h3>
-                  <p>Yes! Many of our educational initiatives take place in urban areas. Additionally, we offer virtual volunteering opportunities for content creation, social media management, and online educational programs.</p>
-                </div>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Can I volunteer as part of a group or corporate team?</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p>Absolutely! We offer special programs for corporate teams, schools, and community groups. These can be customized based on your group's interests and objectives.</p>
+                  </CardContent>
+                </Card>
+                
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Are meals provided for volunteers?</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p>For full-day volunteers, we provide a complimentary traditional vegetarian lunch made with organic ingredients from our farm. For shorter sessions, we offer refreshments.</p>
+                  </CardContent>
+                </Card>
               </div>
             </div>
           </section>
           
           {/* Call to Action */}
-          <section className="bg-amber-50 py-16">
+          <section className="bg-terracotta-50 py-16">
             <div className="container mx-auto px-4 text-center">
               <h2 className="text-3xl font-bold mb-6 font-playfair">Ready to Make a Difference?</h2>
               <p className="text-lg max-w-2xl mx-auto mb-8">
-                Join our team of passionate volunteers and help us preserve our cultural heritage while creating a sustainable future.
+                Join our community of passionate volunteers and help us in our mission to rescue, rehabilitate, and provide a loving home for indigenous cows.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-amber-600 hover:bg-amber-700">Apply as a Volunteer</Button>
-                <Button size="lg" variant="outline">Contact Volunteer Coordinator</Button>
+                <Button size="lg" className="bg-terracotta-500 hover:bg-terracotta-600">Apply Now</Button>
+                <Button size="lg" variant="outline">Contact for More Information</Button>
               </div>
             </div>
           </section>
@@ -288,29 +331,6 @@ const VolunteerOpportunities = () => {
         <Footer />
       </div>
     </>
-  );
-};
-
-const TimelineItem = ({ number, title, description, isLeft }: { number: string; title: string; description: string; isLeft: boolean }) => {
-  return (
-    <div className="relative z-10">
-      <div className={`flex items-center justify-between ${isLeft ? 'flex-row-reverse md:flex-row' : 'flex-row-reverse'}`}>
-        <div className="hidden md:block w-5/12"></div>
-        
-        <div className="flex items-center justify-center z-10">
-          <div className="bg-amber-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold">
-            {number}
-          </div>
-        </div>
-        
-        <div className="w-full md:w-5/12 ml-4 md:ml-0">
-          <div className="bg-white p-4 rounded-lg shadow-sm">
-            <h3 className="text-xl font-bold mb-2">{title}</h3>
-            <p>{description}</p>
-          </div>
-        </div>
-      </div>
-    </div>
   );
 };
 
